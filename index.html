@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Carnet Gourmand - Avis des lecteurs</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">🍲</div>
+        <div class="header-text">
+            <h1>Le Carnet Gourmand</H1>
+            <p>Avis des lecteurs</p>
+        </div>
+    </header> 
+    
+    <main>
+
+        <!-- Zone recette -->
+        <section class="recipe">
+            <h2>Pâtes crémeuse au citron</h2>
+            <p>Laissez votre avis sur cette recette grace au formulaire ci-contre</p>
+
+            <section class="recipe-details">
+
+                <h3>Ingrédients</h3>
+                <ul title="Ingrédients">
+                    <li>Pâtes</li>
+                    <li>Crème</li>
+                    <li>Citron</li>
+                    <li>Parmesan</li>
+                </ul>
+
+                <h3>Préparation</h3>
+                <ol title="Préparation">
+                    <li>Cuire les pâtes.</li>
+                    <li>Mélanger la crème et le citron.</li>
+                    <li>Ajouter le parmesan.</li>
+                </ol>
+
+            </section>
+        </section>
+
+        <!-- Zone commentaire -->
+        <section class="customers-review">
+            <h3>Laisser un commentaire</h3>
+            <form id="comment-form">
+                <label for="name">Votre nom</label>
+                <input id="name" type="text" placeholder="Ex : Léa">
+                <small class="hint">Minimum 2 caractères</small>
+
+                <label for="customer-comment">Votre commentaire</label>
+                <textarea id="comment" placeholder="Votre avis sur la recette..."></textarea>
+                <small class="hint">Minimum 10 caractères</small>
+
+                <button type="submit">Publier</button>
+                <div id="error" class="error"></div>
+            </form>
+
+            <section id="comments">
+                <h3>Commentaires</h3>
+                <!--Ici seront insérer les commentaires client dans des <div> aprés validation du formulaire-->
+            </section>            
+
+        </section>
+    </main>
+    
+    <footer>
+        Devoir JavaScript -- Frontend
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>  
+</html>
