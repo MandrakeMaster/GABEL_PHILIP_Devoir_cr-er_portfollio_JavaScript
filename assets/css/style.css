@@ -117,7 +117,6 @@ input, textarea{
     border-radius: 12px;
     margin-top: 10px;
     text-align: center;
-    white-space: nowrap; /* Force le texte à rester sur une seule ligne */
 }
 
 /* Mise en forme des COMMENTAIRES*/
