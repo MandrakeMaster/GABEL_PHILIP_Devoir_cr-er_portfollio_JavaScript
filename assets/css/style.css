@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+
+/* Mise en forme des 2 cadres principaux et du BODY*/
+body{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: #f6f7fb;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #111827;
+    box-sizing: border-box;
+}
+
+.recipe, .customers-review{
+    background-color:#ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    margin-top: 20px;
+}
+
+
+/* Mise en forme de la zone RECETTE */
+.recipe-details{
+    background-color:#fafafa;
+    border-radius: 12px;
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+ol, ul{
+    padding-left: 20px;
+    margin: 20px 5px;
+}
+
+.recipe h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+/* Mise en forme de la zone COMMENTAIRE */
+.customers-review{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customers-review h2{
+    flex-basis: 100%;
+}
+
+#comments{
+    flex-basis: 100%;
+}
+#comment-form{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#comment-form button{
+    padding: 10px 14px;
+    border-radius: 12px;
+    background-color: #2563eb;
+    color: #ffffff ;
+    font-weight: bold;
+}
+
+input, textarea{
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;;
+}
+
+.error {
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap; /* Force le texte à rester sur une seule ligne */
+}
+
+/* Mise en forme des COMMENTAIRES*/
+.comment{
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-top: 12px;
+    background-color: #ffffff;
+    line-height: 2.5;
+}
+
+.btn-delete {
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: #dc2626;
+    background-color: transparent; /* Fond transparent */
+    border: none;                  /* Aucune bordure */
+    cursor: pointer;
+    font-weight: bold;             /* Optionnel : pour le rendre plus lisible */
+}
+
+/*Mise en forme du header*/
+header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom:10px ;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+.logo-box{
+    border: 1px solid #e5e7eb;
+    border-radius: 20%;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mise en forme du footer */
+
+footer{
+    color: #6b7280;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Mise en forme des titres et textes secondaire*/
+h1, h2, h3, h4, label{
+    font-weight: bold;
+}
+
+small, p, placeholder{
+    color:#6b7280;
+}
+
+
+/* Mis en place du responsive largeur 900px */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Desktop : 2 colonnes à partir de 900px */
+@media screen and (min-width: 900px) {
+    main{   
+        display: flex;
+        flex-direction: row;
+    }
+    .recipe{
+        flex-basis: 70%;
+    }
+    .customers-review{
+        flex-basis: 30%;
+    }
+}
+
+
+
+
